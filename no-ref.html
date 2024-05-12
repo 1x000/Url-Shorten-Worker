@@ -62,6 +62,7 @@
         var timer;
         var stopRedirectButton = document.getElementById("stop-redirect");
         var continueRedirectButton = document.getElementById("continue-redirect");
+        var finalLink = "{__FINAL_LINK__}";
 
         function startCountdown() {
             timer = setInterval(function() {
@@ -69,9 +70,9 @@
                 count--;
                 if (count < 0) {
                     clearInterval(timer);
-                    window.location.replace("{__FINAL_LINK__}" + window.location.hash);
+                    window.location.replace(finalLink + window.location.hash);
                 }
-            }, 5000);
+            }, 1000);
         }
 
         function stopRedirect() {
