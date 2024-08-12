@@ -5,19 +5,6 @@
     <meta http-equiv="Refresh" content="1; url={__FINAL_LINK__}" />
     <meta name="referrer" content="no-referrer" />
     <style>
-        #link-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        #link-container ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        #link-container li {
-            margin: 0 10px;
-        }
         #disclaimer {
             text-align: center;
             font-size: 12px;
@@ -27,20 +14,13 @@
     </style>
 </head>
 <body>
-    <p>1秒后前往目标页面..<br /><a href="{__FINAL_LINK__}">{__FINAL_LINK__}</a></p>
-    <div id="link-container">
-        <ul>
-            <li><a href="https://faka.xpdbk.com" target="_blank">faka.xpdbk.com 商店</a></li>
-            <li><a href="https://rj.xpdbk.com" target="_blank">rj.xpdbk.com 软件下载</a></li>
-            <li><a href="https://repair.xpdbk.com" target="_blank">repair.xpdbk.com 维修</a></li>
-        </ul>
-    </div>
+    <p>0.5秒后前往目标页面..<br /><a href="{__FINAL_LINK__}">{__FINAL_LINK__}</a></p>
     <div id="disclaimer">
         <p>免责声明: 本网站提供的短链接服务仅用于方便用户访问目标网站,我们不对目标网站的内容负责。请谨慎使用短链接,避免访问不当内容。</p>
     </div>
     <script type="text/javascript">
         /* <![CDATA[ */
-        setTimeout('window.location.replace( "{__FINAL_LINK__}" + window.location.hash );', 1000)
+        setTimeout('window.location.replace( "{__FINAL_LINK__}" + window.location.hash );', 500)
         /* ]]> */
     </script>
 </body>
